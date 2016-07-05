@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- $ Revision: 2.140416 $ -->
+<!--[if IEMobile 7 ]><html class="no-js no-touch iem7" lang="en"> <![endif]-->
+<!--[if lt IE 7]><html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en" xml:lang="en" id="ie6" class="no-js no-touch ie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en" xml:lang="en" id="ie7" class="no-js no-touch ie lt-ie9 lt-ie8 gt-ie6"><![endif]-->
+<!--[if IE 8]><html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en" xml:lang="en" id="ie8" class="no-js no-touch ie lt-ie9 gt-ie6 gt-ie7"><![endif]-->
+<!--[if IE 9]><html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en" xml:lang="en" id="ie9" class="no-js no-touch ie lt-ie10 gt-ie8 gt-ie7 gt-ie6"><![endif]-->
+<!--[if !IE]><!-->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en" xml:lang="en" class="no-js no-touch">
+<!--<![endif]-->
+<head>
+  <title>Sign In Page</title>
+  <!-- <base href="//www.cisco.com" />  -->
+
+  <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=8" /><![endif]-->
+  <!--[if gt IE 8]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+  <!--[if !IE]><meta http-equiv="X-UA-Compatible" content="chrome=1" /><![endif]-->
+  <meta charset="utf-8">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- Brought over from previous version of Login Page -->
+  <meta name="accessLevel" content="Guest"/>
+  <meta name="country" content="US"/>
+  <meta name="locale" content="US"/>
+  <meta name="language" content="en"/>
+  <meta name="title" content="Login Page"/>
+
+
+  <!--[if (IEMobile 7) | (lt IE 9)]>
+    <link rel="stylesheet" href="/etc/designs/cdc/clientlibs/responsive/css/login-ie.css" />
+  <![endif]-->
+
+  <!--[if (!IE) | (gt IE 8)]><!-->
+    <link rel="stylesheet" type="text/css" href="//www.cisco.com/etc/designs/cdc/clientlibs/responsive/css/login.css">
+  <!--<![endif]-->
+
+  </head>
+
+  <body id="wcq" class="fw-res cec-login">
+    <!--[if IE 8]><ie xmlns="html5"><![endif]-->
+
+    <div id="fw-skiplinks">    
+      <ul>
+        <li><a href="/" tabindex="4">Home</a></li>
+        <li><a href="#fw-content" tabindex="5">Skip to content</a></li>
+        <li><a href="#fw-footer" class="last" tabindex="6">Skip to footer</a></li>    
+      </ul>
+    </div>
+    <header id="fw-masthead">
+      <div id="fw-banner">
+
+        <a id="fw-logo" href="//www.cisco.com/en/US/hmpgs/index.html" onclick="s_objectID=&quot;http://www.cisco.com/en/US/hmpgs/index.html_2&quot;;return this.s_oc?this.s_oc(e):true">
+          <div>Cisco.com Worldwide Home</div>
+        </a>
+      </div>
+    </header>
+    <div id="fw-content" class="container grid">
+      <div class="row">
+        <div class="col">
+          <section id="fw-title-nav">
+            <h1 class="pagetitle">Sign In</h1>
+            <p>Please use your CEC user name and password.</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <div id="warning-msg">
+              <h3>Your Sign In was unsuccessful for one of the following reasons:</h3>
+            <ul>
+              <li>Your User Name and/or password have been entered incorrectly. Please try again.</li>
+              <li>You have recently registered or reset your password and our systems are still updating your information. Please try again later.</li>
+            </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col"> 
+          <div id="login-wrapper">
+            <article id="login">
+
+                <form id="login-form" method="post" name="login-form" action="/autho/login/loginaction.html">
+                  <ul>
+                    <li>
+                      <label for="userInput" class="username-label">User Name</label>
+                      <input id="userInput" class="inptxt username-input" type="text" name="userid" size="33" maxlength="105" autocapitalize="none" />
+                    </li>
+                    <li>
+                      <label id="password" for="passwordInput" class="password-label">Password</label>
+                      <input id="passwordInput" class="inptxt password-input" type="password" name="password" size="33" maxlength="105" autocomplete="off" />
+                    </li>
+                    <input type="hidden" name="target" value=""/>
+                    <input type="hidden" name="smauthreason" value=""/>
+                    <input type="hidden" name="smquerydata" value="">
+                    <input type="hidden" name="smagentname" value="">
+                    <input type="hidden" name="postpreservationdata" value="">
+                    <input type="hidden" name="SMENC" value="">
+                    <input type="hidden" name="SMLOCALE" value="">
+                  </ul>
+                  <input id="login-button" class="button-cta" type="submit" name="login-button" value="Sign In" />
+                </form>
+                <p  class="forget"><a href="http://pwreset.cisco.com">Forgot your password?</a></p>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="fw-footer" class="container">
+      <nav id="fw-footer-nav">
+        <ul>
+          <li><a href="http://wwwin.cisco.com/infosec/policies/classification.shtml">Cisco Confidential</a></li>
+          <li><a href="http://wwwin.cisco.com/pcgi-bin/cec/redirect.cgi?link_id=12353">Emergencies</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+
+  <!--[if IE 8]></ie><![endif]-->
+
+</body>
+</html>
